@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 class Notes {
 	public static void main(String[] args) {
@@ -57,6 +58,10 @@ class Notes {
 		// moveAnimal(c);
 		moveAnimal(horse);
 
+		Animal[] animals = new Animal[]{cat, dog, horse};
+		for (int i = 0; i < animals.length; i++) {
+			animals[i].talk();
+		}
 
 		//instanceof
 		//returns a boolean if the first object is the same as the second object.  Or if the second object is a subclass of the first object.
